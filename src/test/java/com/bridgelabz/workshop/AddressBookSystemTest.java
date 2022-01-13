@@ -17,7 +17,7 @@ public class AddressBookSystemTest {
 	 */
 	@Test
 	public void createContactaddingshouldAnswerWithTrue() {
-		Contact contact = new Contact("Neeta", "Mourya", "Dalayalband", "Bsp", "CG", "495001", "8269068794",
+		Contact contact = new Contact("Neeta", "Mourya", "Dayalband", "Bsp", "CG", 495001,826906879,
 				"neeta.mourya@bridgelabz.com");
 		AddressBookSystem addressBookSystem = new AddressBookSystem();
 		addressBookSystem.createContact(contact);
@@ -29,7 +29,7 @@ public class AddressBookSystemTest {
 
 	@Test
 	public void createContactaddingshouldAnswerWithFalse() {
-		Contact contact = new Contact("Neeta", "Mourya", "Dalayalband", "Bsp", "CG", "495001", "8269068794",
+		Contact contact = new Contact("Neeta", "Mourya", "Dayalband", "Bsp", "CG", 495001,826906879,
 				"neeta.mourya@bridgelabz.com");
 		AddressBookSystem addressBookSystem = new AddressBookSystem();
 		addressBookSystem.createContact(contact);

@@ -19,7 +19,6 @@ public class AddressBookSystem {
 		System.out.println(" 0. Exit. ");
 		System.out.println(" 1. Create contact. ");
 		menu = sc.nextInt();
-
 		while (menu != 0) {
 
 			switch (menu) {
@@ -36,9 +35,9 @@ public class AddressBookSystem {
 					System.out.println("Enter state:");
 					String state = sc.next();
 					System.out.println("Enter zip:");
-					String zip = sc.next();
+					int zip = sc.nextInt();
 					System.out.println("Enter phone Number:");
-					String phoneNumber = sc.next();
+					long phoneNumber = sc.nextLong();
 					System.out.println("Enter email:");
 					String email = sc.next();
 					contact.add(new Contact(firstName, lastName, address, city, state, zip, phoneNumber, email));// Creating a new object and adding it to list
@@ -51,11 +50,9 @@ public class AddressBookSystem {
 			menu = sc.nextInt();
 		}
 		System.out.println("Goodbye!");
-
-	}
-    //createContact mehtod
-	public void createContact(String firstName, String lastName, String address, String city, String state, String zip,
-			String phoneNumber, String email) {
+	}    //createContact mehtod
+	public void createContact(String firstName, String lastName, String address, String city, String state, int zip,
+			long phoneNumber, String email) {
 		Contact person = new Contact(firstName, lastName, address, city, state, zip, phoneNumber, email);
 		contact.add(person);		
 	}

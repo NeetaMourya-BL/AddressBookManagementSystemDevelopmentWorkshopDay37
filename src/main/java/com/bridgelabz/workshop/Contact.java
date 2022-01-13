@@ -6,12 +6,13 @@ public class Contact {
 	private String address;
 	private String city;
 	private String state;
-	private String zip;
-	private String phoneNumber;
+	private int zip;
+	private long phoneNumber;
 	private String email;
 
-	public Contact(String firstName, String lastName, String address, String city, String state, String zip,
-			String phoneNumber, String email) {
+	
+	public Contact(String firstName, String lastName, String address, String city, String state, int zip,
+			long phoneNumber, String email) {
 		super();
 		this.firstName = firstName;
 		this.lastName = lastName;
@@ -63,19 +64,19 @@ public class Contact {
 		this.state = state;
 	}
 
-	public String getZip() {
+	public int getZip() {
 		return zip;
 	}
 
-	public void setZip(String zip) {
+	public void setZip(int zip) {
 		this.zip = zip;
 	}
 
-	public String getPhoneNumber() {
+	public long getPhoneNumber() {
 		return phoneNumber;
 	}
 
-	public void setPhoneNumber(String phoneNumber) {
+	public void setPhoneNumber(long phoneNumber) {
 		this.phoneNumber = phoneNumber;
 	}
 
@@ -87,9 +88,5 @@ public class Contact {
 		this.email = email;
 	}
 
-	@Override
-	public String toString() {
-		return "Contact [firstName=" + firstName + ", lastName=" + lastName + ", address=" + address + ", city=" + city
-				+ ", state=" + state + ", zip=" + zip + ", phoneNumber=" + phoneNumber + ", email=" + email + "]";
-	}
+	
 }
