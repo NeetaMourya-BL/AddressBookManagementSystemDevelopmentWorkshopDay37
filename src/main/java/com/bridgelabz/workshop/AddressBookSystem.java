@@ -54,9 +54,17 @@ public class AddressBookSystem {
 
 	}
     //createContact mehtod
-	private void createContact(String firstName, String lastName, String address, String city, String state, String zip,
+	public void createContact(String firstName, String lastName, String address, String city, String state, String zip,
 			String phoneNumber, String email) {
 		Contact person = new Contact(firstName, lastName, address, city, state, zip, phoneNumber, email);
-		contact.add(person);
+		contact.add(person);		
+	}
+	public List<Contact> getContactList() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+	public void createContact(Contact contact2) {
+		// TODO Auto-generated method stub
+		
 	}
 }
