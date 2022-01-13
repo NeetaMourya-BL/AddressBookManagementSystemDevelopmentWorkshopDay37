@@ -1,4 +1,4 @@
-package workshop.AddressBookManagementSystemDevelopmentWorkshopDay36;
+package com.bridgelabz.workshop;
 
 import static org.junit.Assert.assertTrue;
 
@@ -7,7 +7,7 @@ import org.junit.Test;
 /**
  * Unit test for simple App.
  */
-public class AppTest 
+public class AddressBookSystemTest 
 {
     /**
      * Rigorous Test :-)
